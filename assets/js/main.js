@@ -84,3 +84,28 @@
 
   show(0, false);
 })();
+
+/* Carruseles: deslizar con dedo/rueda/teclado (scroll-snap) y flechas */
+(function () {
+  'use strict';
+  Array.prototype.forEach.call(document.querySelectorAll('[data-carrusel]'), function (root) {
+    var pista = root.querySelector('.carrusel-pista');
+    var prev = root.querySelector('[data-prev]');
+    var next = root.querySelector('[data-next]');
+    if (!pista || !prev || !next) return;
+    function paso() {
+      var item = pista.firstElementChild;
+      return item ? item.getBoundingClientRect().width + 20 : pista.clientWidth * 0.8;
+    }
+    function actualizar() {
+      var max = pista.scrollWidth - pista.clientWidth - 2;
+      prev.setAttribute('aria-disabled', pista.scrollLeft <= 2 ? 'true' : 'false');
+      next.setAttribute('aria-disabled', pista.scrollLeft >= max ? 'true' : 'false');
+    }
+    prev.addEventListener('click', function () { pista.scrollBy({ left: -paso() }); });
+    next.addEventListener('click', function () { pista.scrollBy({ left: paso() }); });
+    pista.addEventListener('scroll', actualizar, { passive: true });
+    window.addEventListener('resize', actualizar);
+    actualizar();
+  });
+})();

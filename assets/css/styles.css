@@ -2,9 +2,10 @@
    Las fuentes (Montserrat, Arvo) se cargan desde <link> en index.html. */
 
 :root {
-  --naranja: #FF8E04;          /* marca: decoración y fondos sin texto */
-  --naranja-btn: #B85600;      /* naranja oscurecido: texto blanco / texto naranja con contraste AA */
-  --naranja-txt: #C86400;      /* naranja para titulares grandes sobre blanco (>=3:1) */
+  --naranja: #FF9800;          /* naranja del logo (muestreado de la imagen del cliente) */
+  --naranja-btn: #FF9800;      /* superficies naranja: botones, resaltados, insignias */
+  --naranja-texto: #B85600;    /* naranja oscuro solo para TEXTO naranja sobre fondo blanco (contraste) */
+  --naranja-txt: #FF9800;      /* ENTENDER (titular grande): naranja del logo */
   --azul: #2E6DA4;
   --azul-oscuro: #1C3A4B;
   --texto: #1E1E1E;
@@ -42,7 +43,7 @@ h1, h2, h3 { font-family: 'Arvo', Georgia, serif; font-weight: 400; }
   padding: 16px 24px; border-radius: 23px; text-decoration: none; text-align: center;
   transition: background .15s, transform .15s;
 }
-.cta-btn:hover { background: #9C4900; transform: translateY(-1px); }
+.cta-btn:hover { background: #E68900; transform: translateY(-1px); }
 
 /* Navbar */
 .navbar {
@@ -79,7 +80,7 @@ h1, h2, h3 { font-family: 'Arvo', Georgia, serif; font-weight: 400; }
 .video-play {
   width: 84px; height: 84px; border-radius: 50%; background: var(--naranja-btn); color: var(--blanco);
   display: flex; align-items: center; justify-content: center; font-size: 2rem;
-  box-shadow: 0 6px 18px rgba(184,86,0,.4);
+  box-shadow: 0 6px 18px rgba(255,152,0,.4);
 }
 .video-instruccion { font-weight: 600; font-size: 1.05rem; margin: 1.5rem 0 2.5rem; }
 
@@ -118,12 +119,12 @@ h1, h2, h3 { font-family: 'Arvo', Georgia, serif; font-weight: 400; }
 .cuestionario-opcion {
   position: relative; display: block; cursor: pointer; user-select: none;
   border: 2px solid var(--naranja-btn); border-radius: 12px; padding: .9rem 1rem;
-  font-weight: 700; color: var(--naranja-btn); background: var(--blanco);
+  font-weight: 700; color: var(--naranja-texto); background: var(--blanco);
   transition: background .15s, color .15s;
 }
 .cuestionario-opcion input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
 .cuestionario-opcion:hover { background: #FFF8F0; color: #9C4900; }
-.cuestionario-opcion:has(input:checked) { background: var(--naranja-btn); color: var(--blanco); box-shadow: 0 4px 14px rgba(184,86,0,.35); }
+.cuestionario-opcion:has(input:checked) { background: var(--naranja-btn); color: var(--blanco); box-shadow: 0 4px 14px rgba(255,152,0,.35); }
 .cuestionario-opcion input:focus-visible + span { outline: 3px solid var(--azul); outline-offset: 6px; border-radius: 6px; }
 .cuestionario-opcion:has(input:focus-visible) { outline: 3px solid var(--azul); outline-offset: 3px; }
 
@@ -136,9 +137,9 @@ h1, h2, h3 { font-family: 'Arvo', Georgia, serif; font-weight: 400; }
 .cuestionario-textarea:focus { outline: 3px solid var(--azul); outline-offset: 2px; border-color: var(--azul); }
 .cuestionario-continuar {
   margin-top: 1.25rem; background: var(--naranja-btn); color: var(--blanco); font: inherit; font-weight: 700; font-size: .95rem;
-  border: 0; border-radius: 23px; padding: .85rem 2rem; cursor: pointer; box-shadow: 0 4px 14px rgba(184,86,0,.35);
+  border: 0; border-radius: 23px; padding: .85rem 2rem; cursor: pointer; box-shadow: 0 4px 14px rgba(255,152,0,.35);
 }
-.cuestionario-continuar:hover { background: #9C4900; }
+.cuestionario-continuar:hover { background: #E68900; }
 .cuestionario-nav { display: flex; justify-content: center; margin-top: 1.5rem; }
 .cuestionario-volver { font: inherit; font-size: .9rem; font-weight: 600; color: var(--azul-oscuro); background: none; border: 0; cursor: pointer; text-decoration: underline; padding: .6rem; min-height: 44px; min-width: 44px; }
 .cuestionario-final p { font-size: 1.05rem; line-height: 1.6; max-width: 480px; margin: .5rem auto 1.75rem; }
@@ -230,6 +231,22 @@ footer > img { height: 70px; width: auto; margin-bottom: 2rem; }
   .hl-float { animation: none; }
   .cta-btn { transition: none; }
 }
+
+/* === Carruseles (Método 360º y testimonios) === */
+.carrusel { position: relative; margin-top: 2rem; }
+.carrusel-pista { display: flex; gap: 1.25rem; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; padding: .5rem .25rem 1rem; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.carrusel-pista::-webkit-scrollbar { display: none; }
+.carrusel .metodo-card, .carrusel .testi-card { flex: 0 0 calc((100% - 2.5rem) / 3); max-width: none; scroll-snap-align: start; }
+.carrusel-btn { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; border: 2px solid var(--azul-oscuro); background: var(--blanco); color: var(--azul-oscuro); font-size: 1.6rem; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 0 0 .15rem; box-shadow: 0 2px 8px rgba(0,0,0,.15); z-index: 2; }
+.carrusel-btn.prev { left: -.75rem; }
+.carrusel-btn.next { right: -.75rem; }
+.carrusel-btn[aria-disabled="true"] { opacity: .35; cursor: default; }
+@media (max-width: 900px) { .carrusel .metodo-card, .carrusel .testi-card { flex-basis: calc((100% - 1.25rem) / 2); } }
+@media (max-width: 640px) {
+  .carrusel .metodo-card, .carrusel .testi-card { flex-basis: 85%; }
+  .carrusel-btn.prev { left: -.25rem; } .carrusel-btn.next { right: -.25rem; }
+}
+@media (prefers-reduced-motion: reduce) { .carrusel-pista { scroll-behavior: auto; } }
 
 /* === Páginas legales (usan este mismo archivo que la landing) === */
 .legal { max-width: 760px; margin: 0 auto; background: var(--blanco); border-radius: 24px; padding: 2.5rem; box-shadow: 0 4px 16px rgba(0,0,0,.07); line-height: 1.7; }
