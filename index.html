@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hazlo Fácil con Montse | Mates de ESO: que tu hij@ entienda de verdad</title>
+<meta name="description" content="Clases de Matemáticas de ESO (1º a 4º) con Montse. Descubre por qué tu hij@ se bloquea, haz el test de 2 minutos y reserva una videollamada sin coste ni compromiso.">
+<meta name="theme-color" content="#F3F7FB">
+<!-- TODO CONFIG: BORRADOR. Quitar esta línea al publicar la versión definitiva para que Google la indexe -->
+<meta name="robots" content="noindex, nofollow">
+
+<!-- TODO CONFIG: URL canónica definitiva de la landing -->
+<link rel="canonical" href="https://hazlofacilconmontse.com/">
+
+<!-- Open Graph / redes -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Hazlo Fácil con Montse | Mates de ESO">
+<meta property="og:description" content="Tu hij@ no necesita más horas de estudio: necesita entender las Mates con su propio método de aprendizaje.">
+<meta property="og:url" content="https://hazlofacilconmontse.com/">
+<!-- TODO CONFIG: imagen para compartir (1200x630 recomendado) -->
+<meta property="og:image" content="https://hazlofacilconmontse.com/wp-content/uploads/2026/04/Subject.png">
+
+<!-- TODO CONFIG: favicon propio -->
+<!-- <link rel="icon" href="assets/img/favicon.png"> -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://hazlofacilconmontse.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Montserrat:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Hazlo Fácil con Montse",
+  "url": "https://hazlofacilconmontse.com/",
+  "description": "Clases de Matemáticas de ESO (1º a 4º) centradas en entender, no memorizar.",
+  "sameAs": ["https://instagram.com/hazlofacilcon_montse"]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#cuestionario">Ir al test</a>
+
+<!-- =====================================================================
+     CONFIGURACIÓN PENDIENTE (buscar "TODO CONFIG" en este archivo y en main.js)
+     1. Enlace de Cal.com ............ botón "Reservar llamada" (id="btnReservar")
+     2. Vídeo de Montse .............. bloque .video-wrap
+     3. Teléfono WhatsApp / Instagram  footer
+     4. Páginas legales .............. footer (hoy href="#")
+     5. Testimonios .................. reales (solo ESO); confirmar permiso de las familias para publicarlos con nombre y curso
+     6. Imágenes alojadas en la web actual: descargarlas a assets/img/ antes de publicar
+     7. (Opcional) envío de respuestas del test: CONFIG.webhookUrl en assets/js/main.js
+     ===================================================================== -->
+
+<header class="navbar">
+  <img src="https://hazlofacilconmontse.com/wp-content/uploads/2026/01/5D9EDF58-0F0E-4C06-9C6A-8E1BF7234CE0-2-e1774637758247-1024x313.png" alt="Hazlo Fácil con Montse" width="157" height="48">
+  <a class="cta-btn" href="#cuestionario">Haz el test y reserva tu llamada</a>
+</header>
+
+<main>
+  <!-- HERO + CUESTIONARIO -->
+  <section class="hero" aria-labelledby="titular">
+    <h1 class="titular" id="titular">
+      <span class="titular-linea">Tu hij@ <strong>NO NECESITA</strong> más horas de estudio, ni memorizar más ejercicios.</span>
+      <span class="titular-linea">Necesita <strong class="hl-naranja">ENTENDER</strong> las Mates con su propio <strong class="hl-resaltado hl-float">MÉTODO DE APRENDIZAJE</strong></span>
+    </h1>
+
+    <!-- TODO CONFIG: sustituir este bloque por el vídeo real de Montse (iframe de YouTube/Vimeo/Wistia con loading="lazy" y title) -->
+    <div class="video-wrap" role="img" aria-label="Espacio reservado para el vídeo de presentación de Montse">
+      <div class="video-play" aria-hidden="true">▶</div>
+    </div>
+    <p class="video-instruccion">Mira este vídeo hasta el final y después responde unas preguntas clave aquí abajo</p>
+
+    <div class="container-estrecho" id="cuestionario">
+      <div class="cuestionario-box" id="cuestionarioBox">
+        <span class="cuestionario-deco d1" aria-hidden="true">+</span>
+        <span class="cuestionario-deco d2" aria-hidden="true">x²</span>
+        <span class="cuestionario-deco d3" aria-hidden="true">√</span>
+        <span class="cuestionario-deco d4" aria-hidden="true">%</span>
+        <span class="cuestionario-deco d5" aria-hidden="true">π</span>
+        <span class="cuestionario-deco d6" aria-hidden="true">÷</span>
+        <span class="cuestionario-deco d7" aria-hidden="true">=</span>
+        <span class="cuestionario-deco d8" aria-hidden="true">×</span>
+
+        <form class="cuestionario-contenido" id="cuestionarioForm" novalidate>
+
+          <!-- Paso 1 -->
+          <fieldset class="cuestionario-step activo" data-paso="1" aria-labelledby="q1">
+            <legend class="sr-only">Pregunta 1 de 4. Elige una opción y pulsa Intro para continuar</legend>
+            <span class="cuestionario-paso" aria-hidden="true">Pregunta 1 de 4</span>
+            <h2 class="cuestionario-pregunta" id="q1" tabindex="-1">¿En qué curso de la ESO está tu hij@?</h2>
+            <div class="cuestionario-opciones">
+              <label class="cuestionario-opcion"><input type="radio" name="curso" value="1º ESO"><span>1º de la ESO</span></label>
+              <label class="cuestionario-opcion"><input type="radio" name="curso" value="2º ESO"><span>2º de la ESO</span></label>
+              <label class="cuestionario-opcion"><input type="radio" name="curso" value="3º ESO"><span>3º de la ESO</span></label>
+              <label class="cuestionario-opcion"><input type="radio" name="curso" value="4º ESO"><span>4º de la ESO</span></label>
+            </div>
+          </fieldset>
+
+          <!-- Paso 2 -->
+          <fieldset class="cuestionario-step" data-paso="2" aria-labelledby="q2" hidden>
+            <legend class="sr-only">Pregunta 2 de 4</legend>
+            <span class="cuestionario-paso" aria-hidden="true">Pregunta 2 de 4</span>
+            <h2 class="cuestionario-pregunta" id="q2" tabindex="-1"><label for="descripcion">Describe con detalle qué le está ocurriendo con las mates</label></h2>
+            <textarea class="cuestionario-textarea" id="descripcion" name="descripcion" placeholder="Escribe aquí tu respuesta…"></textarea>
+            <button type="button" class="cuestionario-continuar" data-continuar>Continuar</button>
+            <div class="cuestionario-nav"><button type="button" class="cuestionario-volver" data-volver>← Volver</button></div>
+          </fieldset>
+
+          <!-- Paso 3 -->
+          <fieldset class="cuestionario-step" data-paso="3" aria-labelledby="q3" hidden>
+            <legend class="sr-only">Pregunta 3 de 4. Elige una opción y pulsa Intro para continuar</legend>
+            <span class="cuestionario-paso" aria-hidden="true">Pregunta 3 de 4</span>
+            <h2 class="cuestionario-pregunta" id="q3" tabindex="-1">¿Qué habéis probado hasta ahora?</h2>
+            <div class="cuestionario-opciones">
+              <label class="cuestionario-opcion"><input type="radio" name="probado" value="Academias"><span>Academias</span></label>
+              <label class="cuestionario-opcion"><input type="radio" name="probado" value="Clases particulares"><span>Clases particulares</span></label>
+              <label class="cuestionario-opcion"><input type="radio" name="probado" value="Ayuda de la familia"><span>Ayuda de la familia</span></label>
+              <label class="cuestionario-opcion"><input type="radio" name="probado" value="Varias"><span>Varias</span></label>
+            </div>
+            <div class="cuestionario-nav"><button type="button" class="cuestionario-volver" data-volver>← Volver</button></div>
+          </fieldset>
+
+          <!-- Paso 4 -->
+          <fieldset class="cuestionario-step" data-paso="4" aria-labelledby="q4" hidden>
+            <legend class="sr-only">Pregunta 4 de 4. Elige una opción y pulsa Intro para continuar</legend>
+            <span class="cuestionario-paso" aria-hidden="true">Pregunta 4 de 4</span>
+            <h2 class="cuestionario-pregunta" id="q4" tabindex="-1">¿Qué buscáis actualmente?</h2>
+            <div class="cuestionario-opciones">
+              <label class="cuestionario-opcion"><input type="radio" name="busqueda" value="Solo busco informarme"><span>Solo busco informarme</span></label>
+              <label class="cuestionario-opcion"><input type="radio" name="busqueda" value="Actuar en las próximas semanas o meses"><span>Actuar en las próximas semanas o meses</span></label>
+              <label class="cuestionario-opcion"><input type="radio" name="busqueda" value="Actuar de forma inmediata y urgente"><span>Actuar de forma inmediata y urgente</span></label>
+            </div>
+            <div class="cuestionario-nav"><button type="button" class="cuestionario-volver" data-volver>← Volver</button></div>
+          </fieldset>
+
+          <!-- Cierre (texto fijado, no modificar) -->
+          <div class="cuestionario-step cuestionario-final" data-paso="5" hidden>
+            <h2 class="sr-only" tabindex="-1">Test completado</h2>
+            <p>¡Genial, ya está! 🙌 Con esto ya tenemos lo que necesitamos para conocer un poco mejor la situación de tu hij@. Ahora el siguiente paso es sencillo: nos vemos cara a cara por videollamada 📞 y lo hablamos con calma todos juntos.<br>Pd: no os olvidéis de que acuda nuestr@ protagonista (tu hij@) 😉</p>
+            <!-- TODO CONFIG: enlace real de Cal.com (formato https://cal.com/usuario/evento). Es el ÚNICO sitio donde se define. -->
+            <a class="cta-btn" id="btnReservar" href="https://cal.com/CAMBIAR-USUARIO/CAMBIAR-EVENTO" target="_blank" rel="noopener">Reservar llamada<span class="sr-only"> (se abre en una pestaña nueva)</span></a>
+            <div class="cuestionario-nav"><button type="button" class="cuestionario-volver" data-volver>← Volver</button></div>
+          </div>
+
+        </form>
+        <noscript><p>Para hacer el test necesitas activar JavaScript. Si prefieres, <a href="https://cal.com/CAMBIAR-USUARIO/CAMBIAR-EVENTO">reserva directamente tu llamada</a> (TODO CONFIG: mismo enlace de Cal.com).</p></noscript>
+        <p class="sr-only" id="cuestionarioEstado" role="status"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AGITACIÓN DEL DOLOR -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Si esto te suena familiar, no estás sol@:</h2>
+      <ul class="pain-list">
+        <li class="pain-item"><span class="pain-emoji" aria-hidden="true">😓</span><span>Dice que lo entiende en clase, pero en casa no sabe ni por dónde empezar.</span></li>
+        <li class="pain-item"><span class="pain-emoji" aria-hidden="true">📚</span><span>Lleva horas delante de los libros y la nota no sube.</span></li>
+        <li class="pain-item"><span class="pain-emoji" aria-hidden="true">😤</span><span>Se bloquea en el primer ejercicio y ya no quiere seguir intentándolo.</span></li>
+        <li class="pain-item"><span class="pain-emoji" aria-hidden="true">🏷️</span><span>En el colegio dicen que "no se esfuerza", y tú sabes que no es solo eso.</span></li>
+        <li class="pain-item"><span class="pain-emoji" aria-hidden="true">👨‍👩‍👧</span><span>Terminas sentad@ a su lado haciendo de profe sin serlo.</span></li>
+        <li class="pain-item"><span class="pain-emoji" aria-hidden="true">😔</span><span>Ya ha probado clases particulares o academias, y seguís igual.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="cta-mini"><a class="cta-btn" href="#cuestionario">Haz el test y reserva tu llamada</a></div>
+
+  <!-- PROBLEMA VS SOLUCIÓN -->
+  <section class="section section-panel">
+    <div class="container">
+      <h2 class="section-title">El problema no es el que parece</h2>
+      <div class="compare-grid">
+        <div class="compare-col problema">
+          <h3><span aria-hidden="true">❌</span> Lo que de verdad está pasando</h3>
+          <ul>
+            <li><span aria-hidden="true">❌</span> Le faltan bases de cursos anteriores que nadie ha detectado.</li>
+            <li><span aria-hidden="true">❌</span> Memoriza procedimientos, pero no entiende por qué funcionan.</li>
+            <li><span aria-hidden="true">❌</span> Ha perdido la confianza y se bloquea antes de intentarlo.</li>
+            <li><span aria-hidden="true">❌</span> No tiene un método propio: depende de que alguien le repita todo.</li>
+          </ul>
+        </div>
+        <div class="compare-col solucion">
+          <h3><span aria-hidden="true">✅</span> Lo que de verdad necesita</h3>
+          <ul>
+            <li><span aria-hidden="true">✅</span> Una valoración real de dónde está el problema, no solo del curso actual.</li>
+            <li><span aria-hidden="true">✅</span> Explicaciones que conectan con su forma de pensar, no una genérica.</li>
+            <li><span aria-hidden="true">✅</span> Práctica acompañada hasta ganar autonomía de verdad.</li>
+            <li><span aria-hidden="true">✅</span> Un método propio que le sirva también cuando no esté en clase.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRANSICIÓN + CTA -->
+  <section class="transicion">
+    <p>No se trata de dar más clases. Se trata de construir, paso a paso, la forma de pensar las matemáticas que a tu hij@ todavía le falta.</p>
+    <a class="cta-btn" href="#cuestionario">Haz el test y reserva tu llamada</a>
+  </section>
+
+  <!-- MÉTODO 360º -->
+  <section class="section" id="metodo">
+    <div class="container">
+      <h2 class="section-title">El Método 360º: aprender desde todos los ángulos</h2>
+      <p class="section-subtitle">No se trata solo de hacer ejercicios, sino de entender cómo y por qué se hacen.</p>
+      <div class="metodo-grid">
+        <div class="metodo-card"><div class="metodo-num" aria-hidden="true">🔍</div><h3>1. Valoración</h3><p>Analizamos qué entiende tu hij@ de verdad, dónde está la dificultad y cuál es su origen.</p></div>
+        <div class="metodo-card"><div class="metodo-num" aria-hidden="true">🧱</div><h3>2. Construcción</h3><p>Explicamos el contenido de forma clara y estructurada, adaptada a su manera de pensar.</p></div>
+        <div class="metodo-card"><div class="metodo-num" aria-hidden="true">💪</div><h3>3. Entrenamiento</h3><p>Acompañamos la práctica paso a paso hasta que gane autonomía y confianza.</p></div>
+        <div class="metodo-card"><div class="metodo-num" aria-hidden="true">🎯</div><h3>4. Consolidación</h3><p>Reforzamos lo aprendido y nos aseguramos de que el conocimiento se mantenga en el tiempo.</p></div>
+      </div>
+      <p class="metodo-resultado">SEGURIDAD · AUTONOMÍA · CONFIANZA · CONTROL</p>
+    </div>
+  </section>
+
+  <div class="cta-mini"><a class="cta-btn" href="#cuestionario">Haz el test y reserva tu llamada</a></div>
+
+  <!-- ASÍ ES COMO EMPEZAMOS -->
+  <section class="section section-panel">
+    <div class="container">
+      <h2 class="section-title">Así es como empezamos</h2>
+      <span class="badge-confianza">Sin coste y sin compromiso</span>
+      <ol class="pasos-grid">
+        <li class="paso-card"><div class="paso-num" aria-hidden="true">1</div><h3>Haz el test</h3><p>Unas preguntas rápidas para entender la situación de tu hij@ (menos de 2 minutos).</p></li>
+        <li class="paso-card"><div class="paso-num" aria-hidden="true">2</div><h3>Mira el vídeo de Montse</h3><p>Se presenta y te explica cómo trabaja, en solo 3 minutos.</p></li>
+        <li class="paso-card"><div class="paso-num" aria-hidden="true">3</div><h3>Reserva tu llamada</h3><p>Elige el día y la hora que mejor te venga en el calendario.</p></li>
+        <li class="paso-card"><div class="paso-num" aria-hidden="true">4</div><h3>Hablamos sin compromiso</h3><p>Resolvemos tus dudas y vemos juntos si encajamos.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- SOBRE MONTSE -->
+  <section class="section">
+    <div class="container">
+      <div class="sobre-montse">
+        <img class="sobre-montse-foto" src="https://i0.wp.com/hazlofacilconmontse.com/wp-content/uploads/2026/04/Subject.png?resize=734%2C1024&amp;ssl=1" alt="Montse, profesora de Matemáticas de ESO" width="180" height="180" loading="lazy" decoding="async">
+        <div class="sobre-montse-texto">
+          <h2>Soy <strong>Montse</strong>…</h2>
+          <div class="sobre-montse-check"><span aria-hidden="true">✅</span> <span>Profesora especializada en Matemáticas de ESO.</span></div>
+          <div class="sobre-montse-check"><span aria-hidden="true">✅</span> <span>Ayudo a alumnos/as de ESO a recuperar la confianza y entender de verdad lo que estudian.</span></div>
+          <div class="sobre-montse-check"><span aria-hidden="true">✅</span> <span>Trabajo con alumnos/as que se bloquean o arrastran bases poco firmes.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-mini"><a class="cta-btn" href="#cuestionario">Haz el test y reserva tu llamada</a></div>
+
+  <!-- TESTIMONIOS -->
+  <section class="section section-panel" id="testimonios">
+    <div class="container">
+      <h2 class="section-title">¿Todavía dudando? Lee lo que dicen las familias</h2>
+      <div class="testi-grid">
+        <!-- Testimonios reales de familias (solo ESO). -->
+        <figure class="testi-card"><div class="testi-stars" role="img" aria-label="5 de 5 estrellas">★★★★★</div><blockquote><p>«Una profesora excepcional, muy paciente y dedicada. Ha logrado que mi hija no solo entienda las matemáticas, sino que también las disfrute. Su manera de enseñar es clara, y se adapta muy bien a las necesidades de mi hija. Maravillosa.»</p></blockquote><figcaption><span class="testi-autor">Rosa María</span><span class="testi-curso">3º ESO</span></figcaption></figure>
+        <figure class="testi-card"><div class="testi-stars" role="img" aria-label="5 de 5 estrellas">★★★★★</div><blockquote><p>«Montse ha sido una gran ayuda para mis hijos. Desde que empezó a darles clases, hemos notado una gran mejoría, no solo en sus calificaciones, sino también en su confianza y ganas de aprender. Es una persona muy paciente, explica de manera clara y siempre se adapta al ritmo de cada niño.»</p></blockquote><figcaption><span class="testi-autor">Gema</span><span class="testi-curso">3º ESO</span></figcaption></figure>
+        <figure class="testi-card"><div class="testi-stars" role="img" aria-label="5 de 5 estrellas">★★★★★</div><blockquote><p>«Es muy proactiva, explica fenomenal, se prepara mucho las clases, es empática y se ha ganado la confianza de mi hija. Una profesional como pocas he conocido. Ojalá los profesores del colegio fueran como ella.»</p></blockquote><figcaption><span class="testi-autor">Olga</span><span class="testi-curso">2º ESO</span></figcaption></figure>
+        <figure class="testi-card"><div class="testi-stars" role="img" aria-label="5 de 5 estrellas">★★★★★</div><blockquote><p>«Destaco su disponibilidad, preparación de las clases y todos los ejercicios/problemas que facilita a mi hija para su trabajo. Las explicaciones están siendo muy bien entendidas por mi hija y comenzamos a ver resultados.»</p></blockquote><figcaption><span class="testi-autor">Isabel</span><span class="testi-curso">2º ESO</span></figcaption></figure>
+        <figure class="testi-card"><div class="testi-stars" role="img" aria-label="5 de 5 estrellas">★★★★★</div><blockquote><p>«Mi hija está muy contenta con ella, hemos notado un gran cambio en su actitud con respecto a las asignaturas y más ganas y empeño a la hora de ponerse con los deberes.»</p></blockquote><figcaption><span class="testi-autor">Manuel</span><span class="testi-curso">1º ESO</span></figcaption></figure>
+        <figure class="testi-card"><div class="testi-stars" role="img" aria-label="5 de 5 estrellas">★★★★★</div><blockquote><p>«He tenido la suerte de conocerla y confiarle las clases particulares de mis dos hijos. Persona muy profesional integra, amable, puntual y muy dedicada a la enseñanza.»</p></blockquote><figcaption><span class="testi-autor">Lucía</span><span class="testi-curso">4º ESO</span></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-final">
+    <span class="eyebrow">Último paso</span>
+    <h2>Reserva tu llamada y descubre si encajamos</h2>
+    <p>Te damos una respuesta honesta sobre si podemos ayudar a tu hij@ — incluida la posibilidad de que no seamos la opción adecuada. Sin letra pequeña, sin presión.</p>
+    <a class="cta-btn" href="#cuestionario">Haz el test y reserva tu llamada</a>
+    <p class="cta-final-note">Tus datos son solo para contactarte. Sin spam.</p>
+  </section>
+</main>
+
+<footer>
+  <img src="https://hazlofacilconmontse.com/wp-content/uploads/2026/01/5D9EDF58-0F0E-4C06-9C6A-8E1BF7234CE0-2-e1774560415568-1024x240.png" alt="Hazlo Fácil con Montse" width="299" height="70" loading="lazy" decoding="async">
+  <div class="footer-cols">
+    <nav class="footer-col" aria-label="Páginas">
+      <h2>Páginas</h2>
+      <a href="#">Inicio</a><a href="#metodo">Método 360º</a><a href="#testimonios">Testimonios</a>
+    </nav>
+    <div class="footer-col">
+      <h2>Horario</h2>
+      <!-- TODO CONFIG: revisar horarios -->
+      <div>📅 Lunes a Viernes</div><div>🕐 10:00–13:00 (familias)</div><div>🕐 15:00–21:30 (clases)</div>
+    </div>
+    <div class="footer-col">
+      <h2>Contáctame</h2>
+      <div class="footer-social">
+        <!-- TODO CONFIG: WhatsApp (formato internacional sin +, ej. 34680813190) e Instagram — vienen del mockup, confirmar que son correctos -->
+        <a href="https://wa.me/34680813190" target="_blank" rel="noopener" aria-label="WA: WhatsApp (se abre en una pestaña nueva)" style="background:#1B7F3F;">WA</a>
+        <a href="https://instagram.com/hazlofacilcon_montse" target="_blank" rel="noopener" aria-label="IG: Instagram (se abre en una pestaña nueva)" style="background:#C2185B;">IG</a>
+      </div>
+    </div>
+  </div>
+  <!-- Legales: enlazan a las páginas de la web actual. TODO CONFIG: revisar que sus textos encajan con esta landing o alojar copias propias -->
+  <p class="footer-legal"><a href="legal/aviso-legal.html">Aviso legal</a> · <a href="legal/politica-de-privacidad.html">Política de privacidad</a> · <a href="legal/politica-de-cookies.html">Política de cookies</a> · <a href="legal/terminos-y-condiciones.html">Términos y condiciones</a></p>
+  <p class="footer-copy">© 2026 Hazlo Fácil con Montse · Todos los derechos reservados</p>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
